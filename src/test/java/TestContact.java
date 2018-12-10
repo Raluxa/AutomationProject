@@ -47,20 +47,20 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
         @Test
         @Title("Test 1 : Test the functionality of the Contact option")
-        public void contactOptionFunctionality() throws InterruptedException {
+        public void contactOptionFunctionality()  {
 
             step.contactOptionFunctionality();
-            Thread.sleep(1000);
+            waitABit(1000);
             getDriver().quit();
 
         }
 
         @Test
         @Title("Test 2 : Test the presence of elements")
-        public void contactsElements() throws InterruptedException {
+        public void contactsElements()  {
 
             step.contactOptionFunctionality();
-            Thread.sleep(1000);
+            waitABit(1000);
             getDriver().quit();
         }
 
@@ -75,18 +75,17 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
         @Test
         @Title("Test 4: Test the contact form with blank fields")
-        public void blankFields () throws InterruptedException {
+        public void blankFields ()  {
             step.blankFields();
-            Thread.sleep(2000);
+            waitABit(1000);
             getDriver().quit();
         }
 
         @Test
         @Title("Test 5: Test the contact form with invalid credentials")
-        public void invalidCredentials () throws InterruptedException {
+        public void invalidCredentials()  {
             step.invalidCredentials();
-            Thread.sleep(2000);
+            waitABit(1000);
             getDriver().quit();
-
         }
     }

@@ -1,5 +1,6 @@
 import common.Application;
 import common.Constants;
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -19,7 +20,7 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class TestSignUp {
+public class TestSignUp extends PageObject {
 
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
@@ -44,10 +45,8 @@ public class TestSignUp {
 
     @Test
     @Title("Username and Password text is present")
-    public void loginElements() throws InterruptedException {
-
+    public void loginElements() {
         step.loginElements();
-        Thread.sleep(1000);
         getDriver().quit();
     }
 
@@ -56,7 +55,7 @@ public class TestSignUp {
     public void successfulSignUp() throws InterruptedException {
 
         step.signUpFunctionality();
-        Thread.sleep(1000);
+        waitABit(1000);
         getDriver().quit();
 
     }
@@ -66,7 +65,7 @@ public class TestSignUp {
     public void signUpEmptyFields() throws InterruptedException {
 
         step.signUpEmptyFields();
-        Thread.sleep(1000);
+        waitABit(1000);
         getDriver().quit();
     }
 

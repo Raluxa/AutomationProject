@@ -78,15 +78,15 @@ public class ContactPage extends PageObject {
 
     // Test 5: Test the contact form with invalid credentials
 
-    public void invalidCredentials() throws InterruptedException {
+    public void invalidCredentials() {
         contactOption.click();
         Assert.assertTrue("The Contact option is non-functional", afterClick.isDisplayed());
         contactEmailField.sendKeys("!£$%^&*(())_");
-        Thread.sleep(3000);
+        waitABit(3000);
         contactNameField.sendKeys("!£$%^&*(())_");
-        Thread.sleep(3000);
+        waitABit(3000);
         messageField.sendKeys("!£$%^&*(())_");
-        Thread.sleep(3000);
+        waitABit(3000);
         sendMessageButton.click();
 
     }

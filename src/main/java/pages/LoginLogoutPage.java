@@ -45,10 +45,10 @@ public class LoginLogoutPage extends PageObject {
     @FindBy(id = "exampleModal")
     WebElement userPage;
 
-    @FindBy(xpath = "//*[@id=\"nameofuser\"]")
+    @FindBy(id = "nameofuser")
     WebElement welcomeuser;
 
-    @FindBy(xpath = "//*[@id=\"logout2\"]")
+    @FindBy(id = "logout2")
     WebElement logoutButton2;
 
 
@@ -73,65 +73,65 @@ public class LoginLogoutPage extends PageObject {
 
     // Test 3 :  Test the close button
 
-    public void closeButtonFunctionality() throws InterruptedException {
+    public void closeButtonFunctionality()  {
         loginOption.click();
         Assert.assertTrue("The login title is not displayed", loginForm.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(1000);
         closeButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
         homePage.isDisplayed();
 
     }
 
     // Test 4 : Test the successful login
 
-    public void successfulLogin(String user, String pass) throws InterruptedException {
+    public void successfulLogin(String user, String pass)  {
         loginOption.click();
         Assert.assertTrue("The Login option is non-functional", loginForm.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         inputUsername.sendKeys(user);
-        Thread.sleep(8000);
+       waitABit(3000);
         inputPassword.sendKeys(pass);
-        Thread.sleep(8000);
+        waitABit(3000);
         loginButton.click();
-        Thread.sleep(5000);
+        waitABit(5000);
         Assert.assertTrue("The welcome user is not display", welcomeuser.isDisplayed());
         logoutButton2.isDisplayed();
     }
 
     // Test 5 : Test the functionality of logout button
 
-    public void logoutUser() throws InterruptedException {
+    public void logoutUser()  {
         loginOption.click();
         Assert.assertTrue("The Login option is non-functional", loginForm.isDisplayed());
-        Thread.sleep(5000);
+        waitABit(5000);
         inputUsername.sendKeys("marius");
-        Thread.sleep(8000);
+        waitABit(8000);
         inputPassword.sendKeys("marius");
-        Thread.sleep(8000);
+        waitABit(8000);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(5000);
         Assert.assertTrue("The welcome user is not display", welcomeuser.isDisplayed());
-        Thread.sleep(5000);
+        waitABit(5000);
         logoutButton2.click();
-        Thread.sleep(5000);
+        waitABit(5000);
         Assert.assertTrue("The home page is not display", homePage.isDisplayed());
 
     }
 
     // Test 6 :  Log in with invalid credentials
 
-    public void invalidCredentials() throws InterruptedException {
+    public void invalidCredentials() {
 
         loginOption.click();
         Assert.assertTrue("The Login option is non-functional", loginForm.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         inputUsername.sendKeys("fgzfd");
-        Thread.sleep(8000);
+        waitABit(8000);
         inputPassword.sendKeys("$%^&hg");
-        Thread.sleep(8000);
+        waitABit(8000);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(8000);
 
         // Test 7 : Log in with valid username and invalid password
 

@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-08-2018 17:21</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-11-2018 22:12</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -110,7 +110,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario"></div>
+        <div class="scenario">Test 1: Username and Password text is present</div>
 
     </div>
 
@@ -124,12 +124,18 @@
                 <tr>
                     <th>#</th>
                         <th>Url</th>
+                        <th>Username1</th>
+                        <th>Password1</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="test-ERROR"><a href="#0">1</a></td>
                             <td class="test-ERROR"><a href="#0">https://www.demoblaze.com/</a>
+                            </td>
+                            <td class="test-ERROR"><a href="#0">Ra567</a>
+                            </td>
+                            <td class="test-ERROR"><a href="#0">Ab3##</a>
                             </td>
                     </tr>
                 </tbody>
@@ -143,9 +149,10 @@
                     <th width="65">                        &nbsp;
                     </th>
 
-                    <th width="%" class="step-description-wide-column greentext">
+                    <th width="%" class="step-description-column greentext">
                         Steps
                     </th>
+                    <th width="120" class="greentext">Screenshot</th>
                     <th width="100" class="greentext">Outcome</th>
                     <th width="75" class="greentext">Duration</th>
                 </tr>
@@ -155,33 +162,69 @@
                 <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
                             <span class="top-level-step">Username and Password text is present</span>
+                            </a>
 
                         </div>
                     </td>
+                        <td width="100" class="ERROR-text">
+                        </td>
                     <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                    <td width="100"><span class="top-level-step">62.25s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-ERROR">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Test 1: Username and Password text is present</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="ERROR-text">
+                                <a href="349361d64440afe402fdc42a8d8f87de0262d08dc63d3abe9c52e21b555538a3_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d02d69a5a2f243bfba05df46094ced0fe4c46017083d3f0a5d27d0cfc9482a40.png"
+                                         href="d02d69a5a2f243bfba05df46094ced0fe4c46017083d3f0a5d27d0cfc9482a40.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">62.25s</span></td>
                 </tr>
                     <tr class="test-ERROR">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <div class="error-message ellipsis"
-                                 title='Null pointer exception'>
-                                <pre>Null pointer exception</pre>
+                                 title='No such element exception: Timed out after 30 seconds. Element not found'>
+                                <pre>No such element exception: Timed out after 30 seconds. Element not found</pre>
                             </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-1">
+                            data-target="#stacktraceModal-2">
                         View stack trace
                     </button>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-1" tabindex="-1" role="dialog"
+                <div class="modal fade" id="stacktraceModal-2" tabindex="-1" role="dialog"
                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -190,13 +233,17 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
+                                org.openqa.selenium.NoSuchElementException
                                 </h4>
                             </div>
                             <div class="modal-body">
-
-                                TestSignUp.setupBrowser(TestSignUp.java
-                                    :33) <br>
+                                    <h5>Timed out after 30 seconds. Element not found<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'<br>System info: host: 'Raluca-PC', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'<br>Driver info: driver.version: unknown</h5>
+                                pages.SignUpPage.loginElements(SignUpPage.java
+                                    :34) <br>
+                                steps.SignUpSteps.loginElements(SignUpSteps.java
+                                    :14) <br>
+                                TestSignUp.loginElements(TestSignUp.java
+                                    :49) <br>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -208,64 +255,14 @@
                 </div>
                         </td>
                     </tr>
-                <tr class="test-FAILURE">
-                    <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Failure</span>
 
-                        </div>
+                    </table>
                     </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: null'>
-                                <pre>Assertion error: null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-0">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-0" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
+                    <tr>
                 <tr class="test-ERROR">
-                    <td colspan="2"></td>
+                    <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.01s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>62.25s</em></span></td>
                 </tr>
 
             </table>

@@ -49,51 +49,46 @@ public class TestLoginLogout {
 
     @Test
     @Title("Login button functionality and elements are present")
-    public void loginOptionFunctionality() throws InterruptedException {
+    public void loginOptionFunctionality() {
 
         step.loginOptionFunctionality();
-        Thread.sleep(1000);
         getDriver().quit();
     }
 
+
     @Test
     @Title("Test 2 : Test the presence of elements")
-    public void loginElements() throws InterruptedException {
+    public void loginElements()  {
 
         step.loginElements();
-        Thread.sleep(3000);
         getDriver().quit();
     }
 
     @Test
     @Title("Test 3 :  Test the close button with blank fields")
-    public void closeButtonFunctionality() throws InterruptedException {
+    public void closeButtonFunctionality()  {
         step.closeButtonFunctionality();
-        Thread.sleep(3000);
         getDriver().quit();
     }
 
     @Test
     @Title("Test 4 : Test the successful login")
-    public void successfulLogin() throws InterruptedException {
+    public void successfulLogin()  {
         step.successfulLogin(username1,password1);
-        Thread.sleep(3000);
         getDriver().quit();
     }
 
     @Test
     @Title("Test 5 : Test the functionality of logout button")
-    public void logoutUser() throws InterruptedException {
+    public void logoutUser() {
         step.logoutUser();
-        Thread.sleep(2000);
         getDriver().quit();
     }
 
     @Test
     @Title("Log in with invalid credentials")
-    public void invalidCredential() throws InterruptedException {
+    public void invalidCredential()  {
         step.invalidCredentials();
-        Thread.sleep(3000);
         getDriver().quit();
 
     }

@@ -20,22 +20,22 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 3 :  Test the close button with blank fields")
-    public void closeButtonFunctionality()throws InterruptedException {
+    public void closeButtonFunctionality() {
         sp.closeButtonFunctionality();
     }
 
     @Step("Test 4 : Test the successful login")
-    public void successfulLogin(String user, String pass) throws InterruptedException {
+    public void successfulLogin(String user, String pass) {
         sp.successfulLogin(user,pass);
     }
 
     @Step("Test 5 : Test the functionality of logout button")
-    public void logoutUser() throws InterruptedException{
+    public void logoutUser() {
         sp.logoutUser();
     }
 
     @Step("Test 6 : Log in with invalid credentials")
-    public void invalidCredentials () throws InterruptedException {
+    public void invalidCredentials ()  {
         sp.invalidCredentials();
     }
 }

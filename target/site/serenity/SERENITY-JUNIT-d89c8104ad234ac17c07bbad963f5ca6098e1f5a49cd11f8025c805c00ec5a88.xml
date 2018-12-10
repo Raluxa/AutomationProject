@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="TestLoginLogout" skipped="0" tests="6" time="97.88" timestamp="2018-10-284 07:01:35"><testcase classname="TestLoginLogout" name="Test 2 : Test the presence of elements"/><testcase classname="TestLoginLogout" name="Test 5 : Test the functionality of logout button"/><testcase classname="TestLoginLogout" name="Log in with invalid credentials"/><testcase classname="TestLoginLogout" name="Login button functionality and elements are present"/><testcase classname="TestLoginLogout" name="Test 3 :  Test the close button with blank fields"/><testcase classname="TestLoginLogout" name="Test 4 : Test the successful login"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="TestLoginLogout" skipped="0" tests="6" time="119.66" timestamp="2018-12-339 10:26:34"><testcase classname="TestLoginLogout" name="Test 2 : Test the presence of elements"/><testcase classname="TestLoginLogout" name="Test 5 : Test the functionality of logout button"/><testcase classname="TestLoginLogout" name="Log in with invalid credentials"/><testcase classname="TestLoginLogout" name="Login button functionality and elements are present"/><testcase classname="TestLoginLogout" name="Test 3 :  Test the close button with blank fields"/><testcase classname="TestLoginLogout" name="Test 4 : Test the successful login"><error message="Timed out after 30 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown</error><system-err>Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Raluca-PC', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown&#13;
+pages.LoginLogoutPage.successfulLogin(LoginLogoutPage.java:98)&#13;
+steps.LoginLogoutPageSteps.successfulLogin(LoginLogoutPageSteps.java:29)&#13;
+TestLoginLogout.successfulLogin(TestLoginLogout.java:77)&#13;
+</system-err></testcase></testsuite>

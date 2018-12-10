@@ -30,7 +30,7 @@ public class ContactSteps extends ScenarioSteps {
     }
 
     @Step("Test 5: Test the contact form with invalid credentials")
-    public void invalidCredentials() throws InterruptedException {
+    public void invalidCredentials()  {
         sp.invalidCredentials();
     }
 }
